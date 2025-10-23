@@ -11,7 +11,7 @@ import { LayoutService } from '../service/layout.service';
     standalone: true,
     imports: [RouterModule, CommonModule, StyleClassModule, AppConfigurator],
     template: ` 
-    <div class="layout-topbar" style="background: linear-gradient(to right, #7f1d1d, #ef4444, #7f1d1d);">
+    <div class="layout-topbar" style="background: linear-gradient(to right, #fd1c1cff, #ee0202ff, #dd0707ff);">
         <div class="layout-topbar-logo-container">
             <button class="layout-menu-button layout-topbar-action" (click)="layoutService.onMenuToggle()">
                 <i class="pi pi-bars"></i>
