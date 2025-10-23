@@ -7,14 +7,14 @@ export const appRoutes: Routes = [
         path: '',
         component: AppLayout,
         children: [
-          {
-        path: '',
-        loadComponent: () =>
-          import(
-            './app/layout/component/app.layout'
-          ).then((m) => m.AppLayout),
-          //canActivate:[AuthGuard]
-      },
+    //       {
+    //     path: '',
+    //     loadComponent: () =>
+    //       import(
+    //         './app/layout/component/app.layout'
+    //       ).then((m) => m.AppLayout),
+    //       //canActivate:[AuthGuard]
+    //   },
       {
         path: 'administracion',
         children: [

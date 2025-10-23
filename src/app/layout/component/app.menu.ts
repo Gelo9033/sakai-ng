@@ -24,14 +24,10 @@ export class AppMenu {
             {
                 label: 'Administración',
                 items: [
-                    { label: 'Unidades', icon: 'pi pi-fw pi-id-card', routerLink: ['/administracion/unidades'] },
-
+                    { label: 'Unidades', icon: 'pi pi-fw pi-id-card', routerLink: ['/administracion/unidades'] }
                 ]
-            },
-
-            
+            }
         ]
     }
-        
 }
 
