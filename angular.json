@@ -46,8 +46,10 @@
                             "sourceMap": true
                         }
                     },
+                    
                     "defaultConfiguration": "production"
                 },
+                
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
@@ -88,6 +90,6 @@
         }
     },
     "cli": {
-      "analytics": false
+        "analytics": false
     }
 }

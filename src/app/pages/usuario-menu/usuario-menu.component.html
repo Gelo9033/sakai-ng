@@ -1,0 +1,48 @@
+<div class="flex justify-end items-center">
+  <img
+    *ngIf="userPhoto"
+    [src]="userPhoto"
+    alt="User Photo"
+    class="foto-pm mr-2"
+  />
+  <button
+    pButton
+    type="button"
+    label="{{ nombreUsuario }}"
+    icon="pi pi-user"
+    (click)="menu.toggle($event)"
+  ></button>
+  <p-menu #menu [model]="menuItems" [popup]="true"></p-menu>
+  
+    <div>
+      <div>
+        <ul class="list-none p-0 m-0 flex flex-col gap-1">
+          <li *ngIf="!isAuthenticated" (click)="onLoginClick()">
+            <button>Iniciar Sesión</button>
+          </li>
+          <li *ngIf="isAuthenticated" (click)="onProfileClick()">
+            <button
+              class="hover:bg-slate-100 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-gray-500/20 rounded-[5px] w-full"
+            >
+              Perfil
+            </button>
+          </li>
+          <li *ngIf="isAuthenticated" (click)="onSettingsClick()">
+            <button
+              class="hover:bg-slate-100 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-gray-500/20 rounded-[5px] w-full"
+            >
+              Configuración
+            </button>
+          </li>
+          <li *ngIf="isAuthenticated" (click)="onLogoutClick()">
+            <button
+              class="hover:bg-slate-100 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-gray-500/20 rounded-[5px] w-full"
+            >
+              Cerrar Sesión
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+ 
+</div>
